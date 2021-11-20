@@ -1,4 +1,3 @@
-import react from "react";
 import './Button.css'
 
 const STYLES = [
@@ -20,7 +19,7 @@ buttonSize}) =>{
     const checkButtonSize = SIZES.includes(buttonSize)? buttonSize: SIZES[0]
 
     return (
-        <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onclick={onclick} type={type}>
+        <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onclick} type={type}>
             {children}
         </button>
     )
